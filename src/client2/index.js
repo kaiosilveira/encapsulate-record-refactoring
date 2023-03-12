@@ -1,6 +1,6 @@
-import { organization } from '../index.js';
+import { getRawDataOfOrganization } from '../index.js';
 
 const newName = 'Metamorphosis Inc';
-organization.name = newName;
+getRawDataOfOrganization().name = newName;
 
-export const result = organization.name;
+export const result = getRawDataOfOrganization().name;
