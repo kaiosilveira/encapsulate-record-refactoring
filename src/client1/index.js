@@ -1,3 +1,3 @@
-import { getRawDataOfOrganization } from '../index.js';
+import { getOrganization } from '../index.js';
 
-export const result = `<h1>${getRawDataOfOrganization().name}</h1>`;
+export const result = `<h1>${getOrganization().name}</h1>`;
