@@ -4,7 +4,7 @@ class CustomerData {
   }
 }
 
-export const customerData = {
+export const customerData = new CustomerData({
   '1920': {
     name: 'kaio',
     id: '1920',
@@ -73,12 +73,16 @@ export const customerData = {
       },
     }
   },
-};
+});
 
-export function getRawDataOfCustomers() {
+export function getCustomerData() {
   return customerData;
 }
 
+export function getRawDataOfCustomers() {
+  return customerData._data;
+}
+
 export function setRawDataOfCustomers(arg) {
-  customerData = arg;
+  customerData = new CustomerData(arg);
 }
