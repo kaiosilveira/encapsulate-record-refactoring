@@ -1,7 +1,7 @@
-import { customerData } from "../customer-data";
+import { getRawDataOfCustomers } from "../customer-data";
 
 export function compareUsage(customerID, laterYear, month) {
-  const later = customerData[customerID].usages[laterYear][month];
-  const earlier = customerData[customerID].usages[[laterYear - 1]][month];
+  const later = getRawDataOfCustomers()[customerID].usages[laterYear][month];
+  const earlier = getRawDataOfCustomers()[customerID].usages[[laterYear - 1]][month];
   return { laterAmount: later, change: later - earlier };
 }

@@ -1,5 +1,5 @@
-import { customerData } from '../customer-data';
+import { getRawDataOfCustomers } from '../customer-data';
 
 export function updateCustomerData() {
-  customerData['1920'].usages['2016']['1'] = 42;
+  getRawDataOfCustomers()['1920'].usages['2016']['1'] = 42;
 }
