@@ -2,6 +2,10 @@ class CustomerData {
   constructor(data) {
     this._data = data;
   }
+
+  setUsage(customerID, year, month, amount) {
+    this._data[customerID].usages[year][month] = amount;
+  }
 }
 
 export const customerData = new CustomerData({

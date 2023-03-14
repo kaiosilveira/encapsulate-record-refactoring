@@ -1,5 +1,5 @@
-import { setUsage } from '../customer-data';
+import { getCustomerData } from '../customer-data';
 
 export function updateCustomerData() {
-  setUsage('1920', '2016', '1', 42);
+  getCustomerData().setUsage('1920', '2016', '1', 42);
 }
