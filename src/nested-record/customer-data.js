@@ -68,3 +68,11 @@ export const customerData = {
     }
   },
 };
+
+export function getRawDataOfCustomers() {
+  return customerData;
+}
+
+export function setRawDataOfCustomers(arg) {
+  customerData = arg;
+}
