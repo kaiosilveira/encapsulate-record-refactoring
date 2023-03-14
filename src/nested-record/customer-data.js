@@ -86,3 +86,7 @@ export function getRawDataOfCustomers() {
 export function setRawDataOfCustomers(arg) {
   customerData = new CustomerData(arg);
 }
+
+export function setusage(customerID, year, month, amount) {
+  getRawDataOfCustomers()[customerID].usages[year][month] = amount;
+}
