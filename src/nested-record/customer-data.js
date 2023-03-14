@@ -1,3 +1,9 @@
+class CustomerData {
+  constructor(data) {
+    this._data = data;
+  }
+}
+
 export const customerData = {
   '1920': {
     name: 'kaio',
